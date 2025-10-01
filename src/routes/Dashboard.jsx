@@ -17,6 +17,7 @@ export default function Dashboard() {
           <GridLink to="/professor/courses" label="My Courses" />
           <GridLink to="/professor/create-quiz" label="Create Quiz" />
           <GridLink to="/professor/live-results" label="Live Results" />
+          <GridLink to="/professor/results-analysis" label="Results Analysis" />
         </Section>
 
         <ThemePanel />

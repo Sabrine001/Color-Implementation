@@ -38,7 +38,15 @@ function CourseCard({ title, code }) {
       <div className="text-base font-medium">{title}</div>
       <div className="mt-3 flex items-center justify-between">
         <Badge>Open</Badge>
-        <Link to="/professor/create-quiz" className="border border-[var(--accent-500)] text-[var(--accent-500)] hover:bg-[var(--accent-500)] hover:text-black px-4 py-2 rounded-xl text-sm font-medium transition active:scale-[.98]">Enter</Link>
+        <button 
+          onClick={() => {
+            // Show success message
+            alert('Entering course! You will be redirected to the quiz creation page.');
+          }}
+          className="border border-[var(--accent-500)] text-[var(--accent-500)] hover:bg-[var(--accent-500)] hover:text-black px-4 py-2 rounded-xl text-sm font-medium transition active:scale-[.98]"
+        >
+          Enter
+        </button>
       </div>
     </div>
   )

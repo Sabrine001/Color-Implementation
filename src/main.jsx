@@ -8,22 +8,30 @@ import App from './App.jsx'
 
 import Dashboard from './routes/Dashboard.jsx'
 import StudentLogin from './routes/StudentLogin.jsx'
+import StudentLoginQR from './routes/StudentLoginQR.jsx'
+import StudentLoginPIN from './routes/StudentLoginPIN.jsx'
+import StudentLoginAccount from './routes/StudentLoginAccount.jsx'
 import ProfessorCourses from './routes/ProfessorCourses.jsx'
 import CreateQuiz from './routes/CreateQuiz.jsx'
 import Results from './routes/Results.jsx'
 import StudentWaiting from './routes/StudentWaiting.jsx'
 import StudentQuiz from './routes/StudentQuiz.jsx'
 import ProfessorLiveResults from './routes/ProfessorLiveResults.jsx'
+import ProfessorResultsAnalysis from './routes/ProfessorResultsAnalysis.jsx'
 
 const router = createBrowserRouter([
   { path: '/', element: <Dashboard /> },
   { path: '/student/login', element: <StudentLogin /> },
+  { path: '/student/login/qr', element: <StudentLoginQR /> },
+  { path: '/student/login/pin', element: <StudentLoginPIN /> },
+  { path: '/student/login/account', element: <StudentLoginAccount /> },
   { path: '/student/waiting', element: <StudentWaiting /> },
   { path: '/student/quiz', element: <StudentQuiz /> },
   { path: '/student/results', element: <Results /> },
   { path: '/professor/courses', element: <ProfessorCourses /> },
   { path: '/professor/create-quiz', element: <CreateQuiz /> },
   { path: '/professor/live-results', element: <ProfessorLiveResults /> },
+  { path: '/professor/results-analysis', element: <ProfessorResultsAnalysis /> },
   { path: '/demo', element: <App /> },
 ])
 
